@@ -1,0 +1,137 @@
+/* _____________________ HTML tags _____________________ */
+*
+*::before
+*::after
+*:before
+*:after
+	box-sizing border-box
+
+*
+	&::selection
+		background-color secondary_light
+*
+	&::-moz-selection
+		background-color secondary_light
+
+body
+	font-family secondary_font
+	font-weight 400
+	font-size 16px
+	line-height 1em
+	color negro
+	margin 0
+	padding 0
+	// -moz-osx-font-smoothing grayscale
+	// -webkit-font-smoothing antialiased
+	// text-shadow 1px 1px 1px rgba(0,0,0,0.004)
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  text-decoration none
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
+  text-decoration underline
+
+h1, h2, h3, h4, h5, h6
+	font-family primary_font
+	font-weight 700
+	margin 0 0 1rem
+
+h1
+	font-size 2.5rem
+	line-height 1.25em
+
+h2
+	font-size 2.25rem
+	line-height 1.15em
+
+h3
+	font-size 1.75rem
+	line-height 1.05em
+
+h4
+	font-size 1.5rem
+	line-height 1em
+
+h5
+	font-size 1.25rem
+	line-height 1em
+
+h6
+	font-size 1.15rem
+	line-height 1em
+
+a
+	text-decoration none
+	color primary
+	&:hover
+		color negro
+
+p
+	font-family secondary_font
+	font-weight 400
+	font-size 1rem
+	line-height 1.25em
+	margin 0 0 1rem
+	strong
+		font-weight 500
+	a
+		color primary
+		text-decoration underline
+  
+ul
+	list-style none
+	margin 0
+	padding 0
+	li
+		margin 0
+		padding 0
+
+em
+	font-style italic
+
+strong
+	font-weight 700
+
+small
+	font-size 60%
+
+hr
+	border solid gris
+	border-width 1px 0 0
+	clear both
+	margin 3em 0
+	height 0
+
+figure
+	display block
+	overflow hidden
+	margin 0
+	a
+		display block
+	img
+		display block
+		width 100%
+		height auto
+
+img
+	max-width 100%
+	height auto
+
+blockquote
+	font-family secondary_font
+	font-style italic
+	font-size 1.25rem
+	line-height 1.5rem
+	margin 0 0 2rem
+	padding 0 0 0 1rem
+	border-left 2px solid
+mark
+	background-color white
+	color negro
+
+nav
+	ul
+		li
+			display inline-block
+			vertical-align baseline
+			margin 0 1rem 0

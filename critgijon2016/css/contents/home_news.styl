@@ -1,0 +1,66 @@
+/*_______ Home news _______*/
+.home_news
+	flex-basis 68%
+	@media (max-width: 480px)
+		flex-basis 100%
+	.item
+		margin 0 0 4rem
+		flex-basis 100%
+		&:hover
+			.post_image
+				opacity .75
+			.post_excerpt
+				.title
+					a
+						color negro
+					&:before
+						background-color negro
+		.post_image
+			flex-basis 35%
+			transition all .25s ease-in-out
+			@media (max-width: 480px)
+				flex-basis 100%
+				margin 0 auto 1rem
+		.post_excerpt
+			position relative
+			flex-basis 63%
+			@media (max-width: 480px)
+				flex-basis 100%
+			.title
+				line-height .95em
+				margin 0 0 .5rem
+				&:before
+					content ''
+					display block
+					width 4rem
+					height .5rem
+					margin 0 0 1rem
+					background-color primary
+					@media (max-width: 480px)
+						margin 0 0 .75rem
+				a
+					color primary
+			p
+				font-weight 400
+				font-size .95rem
+		&:nth-child(even)
+			flex-direction row-reverse
+			@media (max-width: 480px)
+				flex-direction inherit
+			.post_excerpt
+				text-align right
+				@media (max-width: 480px)
+					text-align inherit
+				.title
+					a
+						display block
+						margin 1.5rem 0 0 0
+						@media (max-width: 480px)
+							display inherit
+							margin 0
+					&:before
+						position absolute
+						top 0
+						right 0
+						@media (max-width: 480px)
+							position inherit

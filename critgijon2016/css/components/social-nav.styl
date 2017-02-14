@@ -1,0 +1,38 @@
+/*_______ Social nav _______*/
+#menu-social_menu
+	width 100%
+	text-align center
+	margin 0 auto 2rem
+	li
+		display inline-block
+		width 2rem
+		height 2rem
+		margin 0 .75rem
+		border-radius 50%
+		overflow hidden
+		a
+			display block
+			height 100%
+			text-indent -9999px
+			transition all .25s ease-in-out
+		&.facebook
+			a
+				background url(../svg/icon_facebook.svg) no-repeat center secondary
+				background-size 30%
+				&:hover
+					background-color primary
+					background-size 40%
+		&.instagram
+			a
+				background url(../svg/icon_instagram.svg) no-repeat center secondary
+				background-size 50%
+				&:hover
+					background-color primary
+					background-size 70%
+		&.tumblr
+			a
+				background url(../svg/icon_tumblr.svg) no-repeat center secondary
+				background-size 35%
+				&:hover
+					background-color primary
+					background-size 50%

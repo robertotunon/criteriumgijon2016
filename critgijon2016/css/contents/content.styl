@@ -1,0 +1,107 @@
+.section_image
+	margin 0 auto 2rem
+
+.req_advert
+	background-color gris_muyclaro
+	padding 1rem
+	p
+		font-size 1.05rem
+		line-height 1.25em
+		margin 0
+
+.transports
+	.item
+		flex 0 1 32%
+		@media (max-width: 480px)
+			flex-basis 100%
+		.title
+			font-size 1.5rem
+			margin 0 0 .5rem
+.hosts
+	align-items stretch
+	&:after
+		content ''
+		flex-basis 31%
+	.item
+		flex 0 1 32%
+		padding 1rem
+		margin 0 0 2rem 0
+		word-break break-word
+		background-color gris_muyclaro
+		border-left 2px solid primary
+		@media (max-width: 480px)
+			flex-basis 100%
+		.title
+			font-weight 400
+			font-size 1.05rem
+			letter-spacing -.025rem
+			margin 0 0 .25rem
+		p
+			font-size 90%
+			line-height 1.25em
+			margin 0 0 .15rem
+
+.inscritos
+.resultados
+	h2
+		font-size 1.15rem
+		margin 0 0 .25rem
+	table
+		max-width 100%
+		width 100%
+		font-size .9em
+		border-collapse collapse
+		margin 0 auto 2rem
+		thead
+			font-size 1em
+			line-height 2em
+			color negro
+			border-bottom 1px solid
+			tr
+				max-width 100%
+				th
+					vertical-align middle
+					text-align left 
+					padding 15px 10px
+					&:first-child
+						text-align center
+						width 10%
+					&:nth-child(2)
+						width 25%
+					&:nth-child(3)
+						width 45%
+					&:nth-child(4)
+						text-align center
+						width 20%
+		tbody
+			tr
+				&:nth-child(even)
+					background gris_muyclaro
+				td
+					&:first-child
+					&:nth-child(4)
+						text-align center
+			td
+				padding 15px 10px
+.resultados
+	table
+		thead
+			th
+				&:first-child
+					width 10% !important
+				&:nth-child(2)
+					text-align center !important
+					width 10% !important
+				&:nth-child(3)
+					width 40% !important
+				&:nth-child(4)
+					text-align left !important
+					width 40% !important
+		tbody
+			tr
+				td
+					&:first-child
+					&:nth-child(2)
+						text-align center
+					&:nth-child(4)
+						text-align left
